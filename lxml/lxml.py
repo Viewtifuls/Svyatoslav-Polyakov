@@ -34,9 +34,15 @@ for url in html_list:
     if '--' in url:
         html_list.remove(url)
 for url in html_list:
+    if '--' in url:
+        html_list.remove(url)
+for url in html_list:
     if '.P' in url:
         html_list.remove(url)
-csv = 'Название статьи,Дата публикации,Автор статьи,Рубрика,Путь к файлу\n'
+for url in html_list:
+    if '.k' in url:
+        html_list.remove(url)
+tsv = '"Название статьи"\t"Дата публикации"\t"Автор статьи"\t"Рубрика"\t"Путь к файлу"\n'
 for url in html_list:
     page = urlopen(url).read().decode()
     tree = lxml.html.fromstring(page) 
@@ -56,15 +62,12 @@ for url in html_list:
         if '\r' not in i.text_content():
             text.append(i.text_content())
     text = '\n'.join(text)
-    filename = year+'/'+month+'/'+ name +'.txt'
-    csv = csv + '"' + title + '"' + ',' + '"' + date + '"' + ','+ '"' + author + '"' + ',' + '"' + topic + '"' + ',' + '"' + filename + '"''\n'
+    filename = year+'/'+month+'/'+ name + '_' + str(html_list.index(url)) + '.txt'
+    tsv = tsv + '"' + title + '"' + '\t' + '"' + date + '"' + '\t'+ '"' + author + '"' + '\t' + '"' + topic + '"' + '\t' + '"' + filename + '"''\n'
     os.makedirs(os.path.dirname(filename), exist_ok=True)
     with open(filename, "w", encoding = 'utf-8') as f:
         f.write(text)
         f.close
-f=open('table.csv', 'w', encoding ='utf-8')
-f.write(csv)
-f.close()
-f=open('t.txt', 'w', encoding ='utf-8')
-f.write(''.join(html_list))
+f=open('table.tsv', 'w', encoding ='utf-8')
+f.write(tsv)
 f.close()
