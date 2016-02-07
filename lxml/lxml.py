@@ -4,6 +4,11 @@ import re
 from urllib.request import urlopen
 page = urlopen("http://desnyanka.ru/").read().decode()
 tree = lxml.html.fromstring(page)
+months = {'Январь': 'January', 'Февраль': 'February',
+          'Март': 'March', 'Апрель': 'April', 'Май': 'May',
+          'Июнь': 'June', 'Июль': 'July', 'Август': 'August',
+          'Сентябрь': 'September', 'Октябрь': 'October',
+          'Ноябрь': 'November','Декабрь': 'December'}
 visited = []
 html_list = []
 not_visited = []
@@ -49,6 +54,7 @@ for url in html_list:
     date = (re.search('(?<=\s-\s).*П', tree.xpath('.//span[@class="post-date"]/text()')[0])).group(0)
     year = (re.search('2[0-9]{3}', date)).group(0)
     month = (re.search('.*?(?=\s)', date)).group(0)
+    month = months[month]
     title = re.search('.*(?=\s\|)', tree.findtext('.//title')).group(0)
     name = re.sub('[:*?"/<>|»]', '', title)
     if len(tree.xpath('.//p[@style="text-align: right"]')) != 0:
@@ -62,7 +68,7 @@ for url in html_list:
         if '\r' not in i.text_content():
             text.append(i.text_content())
     text = '\n'.join(text)
-    filename = year+'/'+month+'/'+ name + '_' + str(html_list.index(url)) + '.txt'
+    filename = year+'/'+month+'/'+ str(html_list.index(url)) + '.txt'
     tsv = tsv + '"' + title + '"' + '\t' + '"' + date + '"' + '\t'+ '"' + author + '"' + '\t' + '"' + topic + '"' + '\t' + '"' + filename + '"''\n'
     os.makedirs(os.path.dirname(filename), exist_ok=True)
     with open(filename, "w", encoding = 'utf-8') as f:
