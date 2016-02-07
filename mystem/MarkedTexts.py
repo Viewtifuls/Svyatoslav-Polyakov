@@ -24,4 +24,3 @@ for file in file_names:
     In = path+'\\nomarks\\'+file+' ' 
     Out = path+'\\marked\\'+file+'\"'
     os.system(mystem+In+Out)
-    
