@@ -38,8 +38,17 @@ def get_meta():
         if 'bdate' in check[0]:
             bdate = check[0]['bdate']
         else: bdate = ' '
-        sex = str(check[0]['sex'])
-        city = str(check[0]['city'])
+        if check[0]['sex'] == 1:
+            sex = 'female'
+        elif check[0]['sex'] == 2:
+            sex = 'male'
+        else:
+            sex = ' '
+        city = check[0]['city']
+        if city != 0:
+            city = api.database.getCitiesById(city_ids = city)[0]['name']
+        else: 
+            city = ' '
         if 'home_town' in check[0]:
             home_town = check[0]['home_town']
         else: home_town = ' '
@@ -60,7 +69,7 @@ def meta_to_tsv():
 def sort_meta():
     df = pd.read_csv('meta.tsv', sep = '\t')
     df = df.sort(['ID'], ascending=True)
-    df.to_csv('D:\\test.csv', index = False, sep = '\t', encoding = 'UTF-8')
+    df.to_csv('D:\\meta.tsv', index = False, sep = '\t', encoding = 'UTF-8')
     
           
 get_ids()

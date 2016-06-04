@@ -2,7 +2,7 @@ Svyatoslav Polyakov
 Python HW
 ##vkontakte 
 Корпус вконтакте. Выбранный город - Сольвычегодск.
-Ссылка на корпус https://yadi.sk/d/fUwfFOtUsDaQ8
+Ссылка на корпус https://yadi.sk/d/rMAKJYAIsFLc6
 ##news_corpus
 Ссылка на корпус https://yadi.sk/d/ydDb0973p2e3Z
 <br>lxml.py - обкачивает сайт, сохраняет файлы, создает первую версию таблицы<br />
