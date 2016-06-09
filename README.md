@@ -13,6 +13,10 @@ Python HW
 Сама база лежит на сервере web-corpora.net </br>
 Имя базы - guest1_polyakov_sql </br>
 На всякий случай из кода был убран пароль</br>
+##listdir_for_putty.py
+Файл для запуска на сервере
+##chinese
+Китайский парсер
 ##georgian
 <br>Грузинский транслитератор
 ##Amharic
