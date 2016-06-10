@@ -1,0 +1,15 @@
+<body>
+  <se><word><ana lex="күк" morph="Ø" gr="S nom sg"/>Күк</word><word><ana lex="күкрә" morph="т еп" gr="V caus ger"/>күкрәтеп</word><word><ana lex="юл" morph="дар ым а" gr="S pl poss_1sg dat"/>юлдарыма</word></se>
+  <se><word><ana lex="саҡыр" morph="ып" gr="V ger"/>Саҡырып</word><word><ana lex="ат" morph="а" gr="S dat"/>ата</word><word><ana lex="таң" morph="ы" gr="S poss_3sg_pl"/>таңы</word>,\n</se>
+  <se><word><ana lex="тамыр" morph="ым да" gr="S poss_1sg loc"/>Тамырымда</word><word><ana lex="башҡорт" morph="Ø" gr="S nom sg"/>башҡорт</word>—<word><ana lex="атлы" morph="Ø" gr="ADJ nom sg"/>атлы</word></se>
+  <se><word><ana lex="күс" morph="мә" gr="V neg"/>Күсмә</word><word><ana lex="халҡ" morph="ым дың" gr="S poss_1sg gen"/>халҡымдың</word><word><ana lex="ҡан" morph="ы" gr="S poss_3sg_pl"/>ҡаны</word>.\n</se>
+  <se><word><ana lex="юл" morph="дар" gr="S pl"/>Юлдар</word><word><ana lex="гиҙ" morph="ә м" gr="V pres 1sg"/>гиҙәм</word>,<word><ana lex="йыл" morph="дар" gr="S pl"/>йылдар</word><word><ana lex="гиҙ" morph="ә м" gr="V pres 1sg"/>гиҙәм</word></se>
+  <se><word><ana lex="быуат" morph="тар" gr="S pl"/>Быуаттар</word><word><ana lex="төпкөл" morph="ө нән" gr="S poss_3sg_pl abl"/>төпкөлөнән</word>,\n</se>
+  <se><word><ana lex="замандаш" morph="ым" gr="S poss_1sg"/>Замандашым</word>,<word><ana lex="сәләм" morph="Ø" gr="S nom sg"/>сәләм</word><word><ana lex="һи" morph="ңә" gr="SPRO dat"/>һиңә</word></se>
+  <se><word><ana lex="башҡорт" morph="тоң" gr="S gen"/>Башҡорттоң</word><word><ana lex="төп" morph="Ø" gr="S nom sg"/>төп</word><word><ana lex="иле" morph="нән" gr="S abl"/>иленән</word>.\n</se>
+  <se><word><ana lex="аманат" morph="ы" gr="S poss_3sg_pl"/>Аманаты</word><word><ana lex="баба" morph="лар ҙың" gr="S pl gen"/>бабаларҙың</word>,\n</se>
+  <se><word><ana lex="булығыҙ" morph="Ø" gr="V imp 2sg"/>Булығыҙ</word><word><ana lex="татыу" morph="Ø" gr="ADJ nom sg"/>татыу</word>—<word><ana lex="бер" morph="гә" gr="NUM dat"/>бергә</word>.\n</se>
+  <se><word><ana lex="күс" morph="Ø" gr="V imp 2sg"/>Күс</word><word><ana lex="ҡорт" morph="он дай" gr="S poss_3sg assim"/>ҡортондай</word><word><ana lex="йыйылайы" morph="ҡ" gr="V 1pl"/>йыйылайыҡ</word></se>
+  <se><word><ana lex="урал" morph="ым" gr="S poss_1sg"/>Уралым</word>—<word><ana lex="тирмә" morph="беҙ гә" gr="S poss_1pl dat"/>тирмәбеҙгә</word>,\n</se>
+  <se><word><ana lex="йәшәйе" morph="к" gr="V 1pl"/>Йәшәйек</word><word><ana lex="бергәб" morph="ергә" gr="V inf"/>бергәбергә</word>.\n</se>
+</body>
